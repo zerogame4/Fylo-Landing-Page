@@ -1,0 +1,29 @@
+.header {
+  grid-row: 1/2;
+  width: 100%;
+  .container {
+    @include width(small);
+  }
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  img {
+    width: 100px;
+  }
+
+  ul {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    li {
+      margin-left: 0.9375rem;
+      a {
+        @include button("link");
+      }
+    }
+  }
+}
